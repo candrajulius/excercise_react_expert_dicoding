@@ -4,13 +4,13 @@
 
 import api from "../../utils/api";
 
-const ActioType = {
+const ActionType = {
     RECEIVE_USERS: "RECEIVE_USERS",
 }
 
 function receiveUsersAction(users) {
     return{
-        type: ActioType.RECEIVE_USERS,
+        type: ActionType.RECEIVE_USERS,
         payload: {
             users,
         },
@@ -28,7 +28,7 @@ function asyncRegisterUser({id, name, password}){
 }
 
 export{
-    ActioType,
+    ActionType,
     receiveUsersAction,
     asyncRegisterUser,
 }

@@ -2,11 +2,12 @@
  * @TODO: Define reducer for the users state
  */
 
-import { ActioType } from "./action";
+import { ActionType } from "./action";
 
-function usersReducer(pusers = [], action = {}) {
+
+function usersReducer(users = [], action = {}) {
     switch(action.type){
-        case ActioType.RECEIVE_USERS:
+        case ActionType.RECEIVE_USERS:
             return action.payload.users;
         default:
             return users;

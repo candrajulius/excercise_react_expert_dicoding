@@ -3,13 +3,13 @@
  */
 import api from "../../utils/api";
 import { setAuthUserActionCreator } from "../authUser/action";
-const ActioType = {
-    SET_IS_PRELOAD = 'SET_IS_PRELOAD,
+const ActionType = {
+    SET_IS_PRELOAD: 'SET_IS_PRELOAD',
 };
 
 function setIsPreloadActionCreator(isPreload) {
     return {
-        type: ActioType.SET_IS_PRELOAD,
+        type: ActionType.SET_IS_PRELOAD,
         payload: {
             isPreload,
         },
@@ -30,7 +30,7 @@ function asyncPreloadProcess(){
 }
 
 export{
-    ActioType,
+    ActionType,
     setIsPreloadActionCreator,
     asyncPreloadProcess,
 }
